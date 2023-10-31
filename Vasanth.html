@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Registration</title>
+    <link rel="stylesheet" href="Vasanth.css">
+</head>
+<body>
+    <div class="container">
+        <h1>College Event Registration</h1>
+        <form action="registration_process.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="event">Select Event:</label>
+            <select id="event" name="event" required>
+                <option value="event1">Event 1</option>
+                <option value="event2">Event 2</option>
+                <!-- Add more events as needed -->
+            </select>
+
+            <label for="comment">Comments:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+            
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
